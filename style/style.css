@@ -580,7 +580,7 @@ footer a {
         width: 100%;
         font-size: 1em;
         height: 0px;
-        transition: .6s;
+        transition: .3s;
         visibility: hidden;
         overflow-y: hidden;
         background-color: #ffffff;
@@ -682,6 +682,7 @@ footer a {
 @media only screen and (max-width: 750px) {
     .about_card_text h1 {
         font-size: 3rem;
+        margin-top: 10rem;
     }
 
     #structure .structure_card_right {
@@ -754,8 +755,18 @@ footer a {
 }
 
 @media only screen and (max-width: 555px) {
+    header{
+        height: 80px;
+    }
+    header #header_nav .container .content{
+        font-size: 1em;
+    }
+    #about_img_div{
+        margin-top: 5rem;
+    }
     .about_card_text h1 {
         font-size: 2.5rem;
+        margin-top: 5rem;
     }
 
     .structure_card_left {
@@ -775,11 +786,6 @@ footer a {
     #header_nav .container {
         left: 15%;
     }
-
-    #header_nav .container .content {
-        font-size: 1.5em;
-    }
-
     .about_card_text h1 {
         font-size: 2em;
         padding-left: 5px;
@@ -800,7 +806,7 @@ footer a {
     footer .content {
         position: relative;
         height: auto;
-        font-size: 1.5em;
+        font-size: 1em;
         left: 45%;
     }
 
@@ -814,13 +820,13 @@ footer a {
     }
     footer #socials {
         position: relative;
-        margin-top: 30px;
-        left: 30%;
+        margin-top: 10px;
+        left: 35%;
         column-gap: 2em;
     }
 
     footer a {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
 }
