@@ -18,9 +18,9 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 
 const menuItem = document.getElementById("header_nav_list").innerHTML;
 
+addEventListener('click', fecharMenu);
+
 function fecharMenu() {
   const nav = document.getElementById('header_nav');
   nav.classList.remove('active');
 }
-
-addEventListener('click', fecharMenu);
