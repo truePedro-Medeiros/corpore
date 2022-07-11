@@ -1,7 +1,7 @@
 const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event) {
-  if(event.type === 'touchstart') event.preventDefault();
+  if (event.type === 'touchstart') event.preventDefault();
   const nav = document.getElementById('header_nav');
   nav.classList.toggle('active');
   const active = nav.classList.contains('active');
@@ -16,4 +16,11 @@ function toggleMenu(event) {
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
 
+const menuItem = document.getElementById("header_nav_list").innerHTML;
 
+function fecharMenu() {
+  const nav = document.getElementById('header_nav');
+  nav.classList.remove('active');
+}
+
+addEventListener('click', fecharMenu);
