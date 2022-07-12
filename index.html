@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -65,20 +66,23 @@
     </header>
     <section id="about">
         <div id="about_img_div">
-            <img src="https://img.freepik.com/fotos-gratis/halteres-em-uma-academia-efeito-flare_53419-9742.jpg?w=2000"
-                alt="">
         </div>
         <div class="about_card" id="sobre">
             <div class="about_card_text">
                 <div>
                     <h1>Academia Corpore</h1>
                 </div> <br>
-                <div class="text">Transformando a atividade física no melhor momento do seu dia.</div>
+                <div class="text" data-aos="fade-right">Transformando a atividade física no melhor momento do seu dia.
+                </div>
                 <ul>
-                    <i class="fa-solid fa-image-portrait"></i> <span> Treino Personalizado</span> <br> <br>
-                    <i class="fa-solid fa-face-smile"></i> <span> Ambiente Amigável</span> <br> <br>
-                    <i class="fa-solid fa-people-group"></i> <span> Instrutores</span> <br> <br>
-                    <i class="fa-solid fa-dumbbell"></i> <span> Variedade de Equipamentos</span>
+                    <div data-aos="fade-right"><i class="fa-solid fa-image-portrait"></i> <span> Treino
+                            Personalizado</span></div> <br> <br>
+                    <div data-aos="fade-right"><i class="fa-solid fa-face-smile"></i> <span> Ambiente Amigável</span>
+                    </div> <br> <br>
+                    <div data-aos="fade-right"><i class="fa-solid fa-people-group"></i> <span> Instrutores a
+                            postos</span></div> <br> <br>
+                    <div data-aos="fade-right"><i class="fa-solid fa-car-rear"></i> <span> Estacionamento Próprio</span>
+                    </div>
                 </ul>
             </div>
         </div>
@@ -89,19 +93,19 @@
             <h2>Estrutura</h2>
         </div>
 
-        <div class="structure_card_left card_hover">
+        <div class="structure_card_left card_hover" data-aos="fade-right">
             <div class="structure_left_card_container">
                 <img src="assets/academia_foto1.jpg" alt="">
             </div>
         </div>
 
-        <div class="structure_card_right card_hover">
+        <div class="structure_card_right card_hover" data-aos="fade-left">
             <div class="structure_right_card_container">
                 <img src="assets/academia_foto2.jpg" alt="">
             </div>
         </div>
 
-        <div class="card_hover">
+        <div class="card_hover" data-aos="fade-right">
             <div class="structure_left_card_container">
                 <img src="assets/academia_foto3.jpg" alt="">
             </div>
@@ -118,7 +122,7 @@
     <section id="plans">
         <div class="title">
             <h2>Planos</h2>
-            <p class="planos">Escolha o seu e bora treinar ;)</p>
+            <p class="planos" data-aos="fade-right">Escolha o seu e bora treinar ;)</p>
         </div>
 
         <div id="plans_container">
@@ -152,7 +156,7 @@
         </div>
         <div class="container">
             <a href="https://api.whatsapp.com/send?phone=554799929964">
-                <div class="button">Fale com a gente</div>
+                <div class="button">Fale conosco</div>
             </a>
         </div>
     </section>
@@ -205,6 +209,16 @@
         </div>
     </footer>
     <script src="script/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+
+
+
+        });
+    </script>
 </body>
 
 </html>

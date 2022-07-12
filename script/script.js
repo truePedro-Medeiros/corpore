@@ -1,3 +1,5 @@
+// menu mobile
+
 const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event) {
